@@ -12,7 +12,7 @@ export default function DasboardLayout({
     <div className="h-screen flex">
         {/* {children} */}
         {/* LEFT */}
-        <div className="w-1/6 md:w-[8%]  lg:w-[18%] xl:w-[14%] p-4">
+        <div className="w-1/6 md:w-[8%]  lg:w-[18%] xl:w-[14%] p-4 bg-white">
           <Link href="/" className="flex items-center justify-content lg:justify-start gap-2">
             <Image src="/logo.png" width={32} height={32} alt="logo"/>
             <span className="hidden lg:inline text-md font-semibold">Cur10uSchool</span>

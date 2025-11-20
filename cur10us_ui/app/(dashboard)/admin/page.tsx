@@ -1,6 +1,21 @@
+import UserCard from "@/components/UserCard"
+
 const AdminPage = () =>{
     return (
-        <div className="">Admin Page</div>
+        <div className="p-4 flex gap-4 flex-col md:flex-row">
+            <div className="w-full lg:w-2/3">
+                {/* User cards */}
+                <div className="flex gap-4">
+                    <UserCard type="student" />
+                    <UserCard type="teacher" />
+                    <UserCard type="parents" />
+                    <UserCard type="staff" />
+                </div>
+            </div>
+            <div className="w-full lg:w-1/3">
+                R
+            </div>
+        </div>
     )
 }
 
