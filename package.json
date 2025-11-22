@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ahamuyel/Cur10uSchool/issues"
   },
-  "homepage": "https://github.com/ahamuyel/Cur10uSchool#readme"
+  "homepage": "https://github.com/ahamuyel/Cur10uSchool#readme",
+  "dependencies": {
+    "recharts": "^3.4.1"
+  }
 }
