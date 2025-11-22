@@ -8,7 +8,7 @@ const data = [
     count: 119,
     fill: 'white',
   },
-  {
+  { 
     name: 'Girls',
     count: 54,
     fill: '#f6ed78ff',

@@ -1,23 +1,7 @@
 {
-  "name": "cur10uschool",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahamuyel/Cur10uSchool.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ahamuyel/Cur10uSchool/issues"
-  },
-  "homepage": "https://github.com/ahamuyel/Cur10uSchool#readme",
   "dependencies": {
     "react-calendar": "^6.0.0",
+    "rechart": "^0.0.1",
     "recharts": "^3.4.1"
   }
 }
