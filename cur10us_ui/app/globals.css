@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --sky: #c3ebfa;
 }
 
 @theme inline {
@@ -27,7 +28,7 @@
 
 .react-calendar__tile--active{
   /* background-color: #ab98dc; */
-  background-color: #c3ebfa !important; 
+  background-color: var(--sky) !important; 
   color: black !important;
 }
 
