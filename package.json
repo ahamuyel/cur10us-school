@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ahamuyel/Cur10uSchool#readme",
   "dependencies": {
+    "react-calendar": "^6.0.0",
     "recharts": "^3.4.1"
   }
 }
