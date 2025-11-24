@@ -915,107 +915,182 @@ export const announcementsData = [
   },
 ];
 
-
-// YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
-// YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 export const calendarEvents = [
-  // === MONDAY – 24/11/2025 ===
+  // === SEGUNDA-FEIRA – 24/11/2025 ===
   {
     title: "Math",
     allDay: false,
-    start: new Date(2025, 10, 24, 7, 30, 0),
-    end: new Date(2025, 10, 24, 9, 0, 0),
+    start: new Date(2025, 10, 24, 7, 30),
+    end: new Date(2025, 10, 24, 8, 50), // 1h20
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2025, 10, 24, 9, 15, 0),
-    end: new Date(2025, 10, 24, 10, 45, 0),
+    start: new Date(2025, 10, 24, 9, 0),
+    end: new Date(2025, 10, 24, 9, 45), // 45min
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2025, 10, 24, 11, 0, 0),
-    end: new Date(2025, 10, 24, 12, 30, 0),
+    start: new Date(2025, 10, 24, 10, 0),
+    end: new Date(2025, 10, 24, 11, 20), // 1h20
   },
-
-  // === TUESDAY – 25/11/2025 ===
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2025, 10, 25, 7, 30, 0),
-    end: new Date(2025, 10, 25, 9, 0, 0),
+    start: new Date(2025, 10, 24, 11, 30),
+    end: new Date(2025, 10, 24, 12, 15), // 45min
   },
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2025, 10, 25, 9, 15, 0),
-    end: new Date(2025, 10, 25, 10, 45, 0),
+    start: new Date(2025, 10, 24, 13, 30),
+    end: new Date(2025, 10, 24, 14, 50), // 1h20
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2025, 10, 25, 11, 0, 0),
-    end: new Date(2025, 10, 25, 12, 30, 0),
+    start: new Date(2025, 10, 24, 15, 0),
+    end: new Date(2025, 10, 24, 15, 45), // 45min
   },
 
-  // === WEDNESDAY – 26/11/2025 ===
+  // === TERÇA-FEIRA – 25/11/2025 (até 17h) ===
+  {
+    title: "English",
+    allDay: false,
+    start: new Date(2025, 10, 25, 7, 30),
+    end: new Date(2025, 10, 25, 8, 50), // 1h20
+  },
+  {
+    title: "Biology",
+    allDay: false,
+    start: new Date(2025, 10, 25, 9, 0),
+    end: new Date(2025, 10, 25, 10, 20), // 1h20
+  },
+  {
+    title: "Physics",
+    allDay: false,
+    start: new Date(2025, 10, 25, 10, 30),
+    end: new Date(2025, 10, 25, 11, 15), // 45min
+  },
+  {
+    title: "History",
+    allDay: false,
+    start: new Date(2025, 10, 25, 13, 30),
+    end: new Date(2025, 10, 25, 14, 50), // 1h20
+  },
+  {
+    title: "Chemistry",
+    allDay: false,
+    start: new Date(2025, 10, 25, 15, 0),
+    end: new Date(2025, 10, 25, 16, 20), // 1h20
+  },
   {
     title: "Math",
     allDay: false,
-    start: new Date(2025, 10, 26, 7, 30, 0),
-    end: new Date(2025, 10, 26, 9, 0, 0),
+    start: new Date(2025, 10, 25, 16, 30),
+    end: new Date(2025, 10, 25, 17, 0), // 30min (complementar)
+  },
+
+  // === QUARTA-FEIRA – 26/11/2025 ===
+  {
+    title: "Math",
+    allDay: false,
+    start: new Date(2025, 10, 26, 7, 30),
+    end: new Date(2025, 10, 26, 8, 50), // 1h20
+  },
+  {
+    title: "Biology",
+    allDay: false,
+    start: new Date(2025, 10, 26, 9, 0),
+    end: new Date(2025, 10, 26, 9, 45), // 45min
+  },
+  {
+    title: "Chemistry",
+    allDay: false,
+    start: new Date(2025, 10, 26, 10, 0),
+    end: new Date(2025, 10, 26, 11, 20), // 1h20
+  },
+  {
+    title: "History",
+    allDay: false,
+    start: new Date(2025, 10, 26, 13, 30),
+    end: new Date(2025, 10, 26, 14, 15), // 45min
+  },
+  {
+    title: "Physics",
+    allDay: false,
+    start: new Date(2025, 10, 26, 14, 30),
+    end: new Date(2025, 10, 26, 15, 50), // 1h20
+  },
+
+  // === QUINTA-FEIRA – 27/11/2025 (até 17h) ===
+  {
+    title: "English",
+    allDay: false,
+    start: new Date(2025, 10, 27, 7, 30),
+    end: new Date(2025, 10, 27, 8, 50), // 1h20
+  },
+  {
+    title: "Biology",
+    allDay: false,
+    start: new Date(2025, 10, 27, 9, 0),
+    end: new Date(2025, 10, 27, 10, 20), // 1h20
+  },
+  {
+    title: "Physics",
+    allDay: false,
+    start: new Date(2025, 10, 27, 10, 30),
+    end: new Date(2025, 10, 27, 11, 50), // 1h20
+  },
+  {
+    title: "History",
+    allDay: false,
+    start: new Date(2025, 10, 27, 13, 30),
+    end: new Date(2025, 10, 27, 14, 50), // 1h20
+  },
+  {
+    title: "Chemistry",
+    allDay: false,
+    start: new Date(2025, 10, 27, 15, 0),
+    end: new Date(2025, 10, 27, 16, 20), // 1h20
+  },
+  {
+    title: "Math",
+    allDay: false,
+    start: new Date(2025, 10, 27, 16, 30),
+    end: new Date(2025, 10, 27, 17, 0), // 30min complementar
+  },
+
+  // === SEXTA-FEIRA – 28/11/2025 ===
+  {
+    title: "Math",
+    allDay: false,
+    start: new Date(2025, 10, 28, 7, 30),
+    end: new Date(2025, 10, 28, 8, 50), // 1h20
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2025, 10, 26, 9, 15, 0),
-    end: new Date(2025, 10, 26, 10, 45, 0),
+    start: new Date(2025, 10, 28, 9, 0),
+    end: new Date(2025, 10, 28, 9, 45), // 45min
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2025, 10, 26, 11, 0, 0),
-    end: new Date(2025, 10, 26, 12, 30, 0),
+    start: new Date(2025, 10, 28, 10, 0),
+    end: new Date(2025, 10, 28, 11, 20), // 1h20
   },
-
-  // === THURSDAY – 27/11/2025 ===
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2025, 10, 27, 7, 30, 0),
-    end: new Date(2025, 10, 27, 9, 0, 0),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2025, 10, 27, 9, 15, 0),
-    end: new Date(2025, 10, 27, 10, 45, 0),
+    start: new Date(2025, 10, 28, 13, 30),
+    end: new Date(2025, 10, 28, 14, 50), // 1h20
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2025, 10, 27, 11, 0, 0),
-    end: new Date(2025, 10, 27, 12, 30, 0),
-  },
-
-  // === FRIDAY – 28/11/2025 ===
-  {
-    title: "Math",
-    allDay: false,
-    start: new Date(2025, 10, 28, 7, 30, 0),
-    end: new Date(2025, 10, 28, 9, 0, 0),
-  },
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2025, 10, 28, 9, 15, 0),
-    end: new Date(2025, 10, 28, 10, 45, 0),
-  },
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2025, 10, 28, 11, 0, 0),
-    end: new Date(2025, 10, 28, 12, 30, 0),
+    start: new Date(2025, 10, 28, 15, 0),
+    end: new Date(2025, 10, 28, 15, 45), // 45min
   },
 ];
