@@ -27,14 +27,178 @@
 }
 
 .react-calendar__tile--active{
-  /* background-color: #ab98dc; */
   background-color: var(--sky) !important; 
   color: black !important;
 }
 
-
 .react-calendar__navigation__label__labelText{
   font-weight: 600 !important;
+}
+
+/* ====================== CALENDÁRIO CUR10US – WEEK VIEW CLEAN ====================== */
+
+.rbc-calendar {
+  font-family: inherit;
+}
+
+/* Esconde botões de navegação (prev/next) */
+.rbc-btn-group:first-child {
+  display: none !important;
+}
+
+/* Botões Day / Week / Month – mais bonitos e compactos */
+.rbc-toolbar .rbc-btn-group:last-child {
+  font-size: 13px !important;
+  gap: 6px;
+}
+
+.rbc-toolbar .rbc-btn-group:last-child button {
+  border: 1.5px solid #e0e7ff !important;
+  border-radius: 10px !important;
+  padding: 8px 14px !important;
+  background: white !important;
+  color: #555 !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.rbc-toolbar .rbc-btn-group:last-child button:hover {
+  background: #eef2ff !important;
+  border-color: #6366f1 !important;
+  color: #6366f1 !important;
+}
+
+.rbc-toolbar button.rbc-active {
+  background: #6366f1 !important;
+  color: white !important;
+  border-color: #6366f1 !important;
+  box-shadow: 0 3px 8px rgba(99, 102, 241, 0.25) !important;
+}
+
+/* Título do mês/semana */
+.rbc-toolbar-label {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+}
+
+/* Esconde o cabeçalho com os nomes dos dias (Mon, Tue...) */
+.rbc-time-header {
+  display: none !important;
+}
+
+/* Remove bordas desnecessárias */
+.rbc-time-view,
+.rbc-time-content {
+  border: none !important;
+}
+
+/* Horários na esquerda (gutter) */
+.rbc-time-gutter.rbc-time-column {
+  background: #f8fafc !important;
+  font-size: 12px !important;
+  color: #64748b !important;
+  font-weight: 500;
+}
+
+.rbc-time-gutter .rbc-timeslot-group {
+  min-height: 60px !important;
+  border-bottom: 1px dashed #e2e8f0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px !important;
+}
+
+.rbc-btn-group{
+  display: flex !important;
+  gap: 0.6rem !important;
+  padding: 1rem;;
+}
+
+/* Fundo dos slots de horário */
+.rbc-timeslot-group {
+  min-height: 60px !important;
+  border-bottom: 1px dashed #e2e8f0 !important;
+  background: #ffffff !important;
+  transition: background 0.2s;
+}
+
+.rbc-day-slot .rbc-timeslot-group:hover {
+  background: #f8faff !important;
+}
+
+/* Destaque no dia atual */
+.rbc-today .rbc-timeslot-group {
+  background: #f0f9ff !important;
+}
+
+/* ====================== EVENTOS – ESTILO PERFEITO ====================== */
+.rbc-event {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 6px 10px !important;
+  margin: 4px 2px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.rbc-event:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Cores fixas por disciplina (ciclo de 8 – fica lindo e previsível) */
+.rbc-event:nth-child(1) {
+  background-color: #e4cafd !important;
+}
+.rbc-event:nth-child(2) {
+  background-color: #afafff !important;
+}
+.rbc-event:nth-child(3) {
+  background-color: #32cafd !important;
+}
+.rbc-event:nth-child(4) {
+  background-color: #73d3da !important;
+}
+.rbc-event:nth-child(5) {
+  background-color: #cafddf !important;
+}
+.rbc-event:nth-child(6) {
+  background-color: #fceadc !important;
+}
+.rbc-event:nth-child(7) {
+  background-color: #75dbb9 !important;
+}
+.rbc-event:nth-child(8) {
+  background-color: #f07d68 !important;
+}
+/* Horário em cima (ex: 8:00 – 8:45) */
+.rbc-event-label {
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  margin-bottom: 2px !important;
+  opacity: 0.9;
+}
+
+/* Responsivo mobile */
+@media (max-width: 640px) {
+  .rbc-event {
+    font-size: 11px !important;
+    padding: 4px 6px !important;
+  }
+  .rbc-toolbar-label {
+    font-size: 1.2rem !important;
+  }
 }
 
 body {
