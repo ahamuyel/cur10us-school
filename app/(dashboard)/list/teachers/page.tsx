@@ -2,6 +2,7 @@ import Pagination from "@/app/components/Pagination"
 import Table from "@/app/components/Table"
 import TableSearch from "@/app/components/TableSearch"
 import Image from "next/image"
+import Link from "next/link"
 
 type Teacher = {
     id: number;
@@ -10,8 +11,8 @@ type Teacher = {
     email?: string;
     foto: string;
     phone: string;
-    subject: string[];
-    classes: string;
+    subjects: string[];
+    classes: string[];
     address: string;
 }
 
@@ -49,12 +50,25 @@ const renderRow = (items: Teacher) => {
                 <h3>{items.name}</h3>
             </div>
         </td>
-        <td>{items.teacherId}</td>
-        <td>{items.subject}</td>
-        <td>{items.classes.join(",")}</td>
-        <td>{items.phone}</td>
-        <td>{items.address}</td>
-        {/* <td>{items.acttion}</td> */}
+        <td className="hidden md:table-cell">{items.teacherId}</td>
+        <td className="hidden md:table-cell">{items.subjects.join(",")}</td>
+        <td className="hidden md:table-cell">{items.classes.join(",")}</td>
+        <td className="hidden md:table-cell">{items.phone}</td>
+        <td className="hidden md:table-cell">{items.address}</td>
+        <td>
+            <div className="flex items-center gap-2">
+                <Link href={`/list/teachers/${items.id}`}>
+                    <button className="w-7 h-7 flex items-center justify-center rounded-full bg-[#dbad78ff]">
+                        <Image src="/view.png" alt="" width={16} height={16}></Image>
+                    </button>
+                </Link>
+                {role === "admin" && (
+                    <button className="w-7 h-7 flex items-center justify-center rounded-full bg-[#dbad78ff]">
+                        <Image src="/view.png" alt="" width={16} height={16}></Image>
+                    </button>
+                )}
+            </div>
+        </td>
 
     </tr>
 }
